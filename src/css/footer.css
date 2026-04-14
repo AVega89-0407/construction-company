@@ -1,0 +1,12 @@
+  footer {
+    background: var(--dark);
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    padding: 2rem 3rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+  }
+
+  footer p {
+    color: var(--accent);
+  }

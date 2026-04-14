@@ -1,0 +1,43 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--white);
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-family: var(--serif);
+  color: var(--dark);
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 10px;
+
+  a {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+
+    &.active {
+      color: var(--accent);
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -5px;
+        height: 2px;
+        background: var(--accent);
+      }
+    }
+  }
+}

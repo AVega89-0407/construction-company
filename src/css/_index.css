@@ -1,0 +1,10 @@
+@import './utils/box-sizing.css';
+@import './utils/sticky-footer.css';
+@import './variables.css';
+@import './header.css';
+@import './main.css';
+@import './footer.css';
+@import './basics.css';
+@import './services.css';
+@import './about.css';
+@import './contact.css';

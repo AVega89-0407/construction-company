@@ -1,0 +1,60 @@
+h1 {
+  font-family: var(--serif);
+  color: var(--dark);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  font-family: var(--sans);
+  color: var(--dark);
+  font-weight: bold;
+  text-align: left;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid var(--muted);
+  border-radius: 4px;
+  font-family: var(--sans);
+  width: 50%;
+}
+
+textarea {
+  padding: 0.5rem;
+  border: 1px solid var(--muted);
+  border-radius: 4px;
+  font-family: var(--sans);
+  resize: vertical;
+  width: 50%;
+  height: 150px;
+}
+
+button {
+  padding: 0.75rem;
+  background: var(--dark);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  font-family: var(--sans);
+  font-weight: normal;
+  cursor: pointer;
+  width: 150px;
+  justify-self: center;
+  align-self: center;
+
+  &:hover {
+    background: var(--accent);
+  }
+}
+
+
+

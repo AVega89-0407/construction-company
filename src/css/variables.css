@@ -1,0 +1,9 @@
+  :root {
+    --bg: #f5f2ee;
+    --dark: #1a1612;
+    --accent: #c8873a;
+    --muted: #7a7268;
+    --white: #ffffff;
+    --serif: 'Playfair Display', serif;
+    --sans: 'DM Sans', sans-serif;
+  }
