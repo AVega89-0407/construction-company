@@ -19,7 +19,9 @@
   background: var(--white);
   border-radius: 8px;
   font-family: var(--sans);
+
   h1 {
+    color: var(--dark);
     font-size: 3rem;
     line-height: 1.2;
     margin-bottom: 20px;
