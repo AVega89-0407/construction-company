@@ -11,8 +11,9 @@ export default function Contact() {
 
     return (
       <>
-        <section className="widget">
-          <h2>Kontakt</h2>
+        <section className="contact-card">
+          <h2>Kontakta oss</h2>
+          <p>Har du frågor eller behov av mer information? Fyll i formuläret nedan så kontaktar vi dig så snart som möjligt.</p>
           <form onSubmit={handleSubmit} >
             <label>Namn</label>
             <input value={formData.name} type="text" name="name" onChange={handleChange} required />
