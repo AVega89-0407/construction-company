@@ -19,7 +19,7 @@ export default function Contact() {
             <label>Email</label>
             <input value={formData.email} type="email" name="email" onChange={handleChange} required />
             <label>Meddelande</label>
-            <textarea value={formData.message} name="message" onChange={handleChange} required></textarea>
+            <textarea value={formData.message} name="message" placeholder="Berätta kort om ditt projekt..." onChange={handleChange} required></textarea>
             <button type="submit">Skicka</button>
           </form>
         </section>

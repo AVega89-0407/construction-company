@@ -204,24 +204,24 @@ import { BrowserRouter as Router, Routes, Route, Link, useLocation } from "react
 
 // function Home() {
 //   return (
-//     <div className="page">
-//       <div className="hero">
-//         <div className="hero-text">
-//           <p className="section-label">Byggföretag i [stad] sedan 1998</p>
-//           <h1>Vi bygger det<br/>du <em>drömmer</em><br/>om.</h1>
-//           <p>Vi är ett familjeägt byggföretag med lång erfarenhet av nybyggnation, renovering och tillbyggnad. Kvalitet och ärlighet i varje projekt.</p>
-//           <Link to="/kontakt" className="hero-cta">
-//             Begär offert
-//             <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-//               <path d="M5 12h14M12 5l7 7-7 7"/>
-//             </svg>
-//           </Link>
-//         </div>
-//         <div className="hero-image">
-//           {/* Byt ut mot en riktig bild: <img src="/images/hero.jpg" alt="Byggprojekt" /> */}
-//         </div>
-//       </div>
-//     </div>
+    // <div className="page">
+    //   <div className="hero">
+    //     <div className="hero-text">
+    //       <p className="section-label">Byggföretag i [stad] sedan 1998</p>
+    //       <h1>Vi bygger det<br/>du <em>drömmer</em><br/>om.</h1>
+    //       <p>Vi är ett familjeägt byggföretag med lång erfarenhet av nybyggnation, renovering och tillbyggnad. Kvalitet och ärlighet i varje projekt.</p>
+    //       <Link to="/kontakt" className="hero-cta">
+    //         Begär offert
+    //         <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+    //           <path d="M5 12h14M12 5l7 7-7 7"/>
+    //         </svg>
+    //       </Link>
+    //     </div>
+    //     <div className="hero-image">
+    //       {/* Byt ut mot en riktig bild: <img src="/images/hero.jpg" alt="Byggprojekt" /> */}
+    //     </div>
+    //   </div>
+    // </div>
 //   );
 // }
 

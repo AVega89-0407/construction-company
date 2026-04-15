@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer>
-      <p>&copy; 2026 NBL</p>
+      © {new Date().getFullYear()} <p>NBL</p> · Alla rättigheter förbehållna
     </footer>
   )
 }

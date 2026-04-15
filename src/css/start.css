@@ -1,0 +1,67 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+}
+
+.hero-text {
+  max-width: 800px;
+  padding: 20px;
+  background: var(--white);
+  border-radius: 8px;
+  font-family: var(--sans);
+  h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+    em {
+      color: var(--accent);
+      font-style: normal;
+    }
+  }
+  .section-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: var(--dark);
+  }
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0.75rem 1.5rem;
+    background: var(--accent);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    font-family: var(--sans);
+    font-weight: normal;
+    cursor: pointer;
+    text-decoration: none;
+
+    svg {
+      width: 16px;
+      height: 16px;
+      stroke-width: 2px;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+  }
+}

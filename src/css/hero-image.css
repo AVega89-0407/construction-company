@@ -1,0 +1,44 @@
+.hero-image-holder {
+  font-family: var(--font-display);
+  position: absolute;
+  margin-top: -50px;
+  margin-left: -50vw;
+  margin-bottom: 30px;
+  /* 
+    Break-out trick - the hero section takes full viewport width
+    See: https: //css-tricks.com/full-width-containers-limited-width-parents/
+  */
+  width: 100vw;
+  left: 50%;
+
+  img {
+    width: 100%;
+    aspect-ratio: 30/10;
+    max-height: 600px;
+    object-fit: cover;
+
+    @media (max-width: 900px) {
+      aspect-ratio: 16/9;
+    }
+
+    @media (max-width: 600px) {
+      aspect-ratio: 4/3;
+    }
+  }
+
+  h2 {
+    line-height: 100%;
+    font-size: 4.5rem;
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: var(--white);
+    text-shadow: 0 0 10px var(--dark);
+    font-family: var(--sans);
+
+    @media (max-width: 900px) {
+      left: 20px;
+      font-size: 3.5rem;
+    }
+  }
+}
