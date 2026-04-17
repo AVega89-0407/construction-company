@@ -66,7 +66,7 @@ textarea {
 }
 
     button {
-      background-color: var(--dark);
+      background-color: var(--accent);
       color: var(--white);
       padding: 0.75rem;
       border: none;
@@ -79,7 +79,7 @@ textarea {
       align-self: center;
 
       &:hover {
-        background-color: var(--accent);
+        background-color: var(--dark);
       }
     }
   }

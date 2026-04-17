@@ -26,19 +26,8 @@
     }
   }
 
-  h2 {
-    line-height: 100%;
-    font-size: 4.5rem;
-    position: absolute;
-    bottom: 40px;
-    left: 40px;
-    color: var(--white);
-    text-shadow: 0 0 10px var(--dark);
-    font-family: var(--sans);
-
     @media (max-width: 900px) {
       left: 20px;
       font-size: 3.5rem;
     }
   }
-}

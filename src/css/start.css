@@ -65,5 +65,9 @@
       stroke-linecap: round;
       stroke-linejoin: round;
     }
+
+    &:hover {
+      background: var(--dark);
+    }
   }
 }
