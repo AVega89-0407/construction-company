@@ -23,7 +23,7 @@ export default function Start() {
           <h1>Vi bygger det<br/>du <em>drömmer</em><br/>om.</h1>
           <p>Vi är ett familjeägt byggföretag med lång erfarenhet av nybyggnation, renovering och tillbyggnad. Kvalitet och ärlighet i varje projekt.</p>
           <Link to="/kontakt" className="hero-cta">
-            Begär offert
+            Kontakta oss
             <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>

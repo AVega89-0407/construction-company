@@ -1,9 +1,13 @@
 import routes from "../routes"
-import { NavLink } from "react-router"
+import { NavLink, useNavigate } from "react-router"
 
 export default function Header() {
+  const navigate = useNavigate()
+
   return (
     <header>
+      <section>
+      <img src="/images/logo.png" alt="Company logo" onClick={() => navigate('/')} />
       <h1>Näslund Bygg & Luftbehandling</h1>
       <nav>
         {routes.map(({ path, label }) => (
@@ -11,7 +15,8 @@ export default function Header() {
             {label}
           </NavLink>
         ))}
-      </nav>
+        </nav>
+      </section>
     </header>
   )
 }
