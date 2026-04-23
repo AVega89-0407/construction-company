@@ -24,11 +24,11 @@ export default function Contact() {
           <h2>Kontakta oss</h2>
           <p>Har du frågor eller behov av mer information? Fyll i formuläret nedan så kontaktar vi dig så snart som möjligt.</p>
           <form onSubmit={handleSubmit} >
-            <label>Namn</label>
-            <input value={formData.name} type="text" name="name" onChange={handleChange} required />
-            <label>Email</label>
-            <input value={formData.email} type="email" name="email" onChange={handleChange} required />
-            <label>Meddelande</label>
+            <label>Namn:</label>
+            <input value={formData.name} type="text" name="name" placeholder="Namn" onChange={handleChange} required />
+            <label>Email:</label>
+            <input value={formData.email} type="email" name="email" placeholder="Email" onChange={handleChange} required />
+            <label>Meddelande:</label>
             <textarea value={formData.message} name="message" placeholder="Berätta kort om ditt projekt..." onChange={handleChange} required></textarea>
             <button type="submit">Skicka</button>
           </form>
