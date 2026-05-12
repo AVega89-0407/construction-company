@@ -20,13 +20,10 @@ export default function Start() {
       <div className="hero">
         <div className="hero-text">
           <p className="section-label">Byggföretag i [stad] sedan 1998</p>
-          <h1>Vi bygger det<br/>du <em>drömmer</em><br/>om.</h1>
-          <p>Vi är ett familjeägt byggföretag med lång erfarenhet av nybyggnation, renovering och tillbyggnad. Kvalitet och ärlighet i varje projekt.</p>
-          <Link to="/kontakt" className="hero-cta">
-            Kontakta oss
-            <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
+          <h1>Vi bygger det<br/>du <em>drömmer</em> om. <br /> Underhåller <br /> det du <em>bryr dig om</em>.</h1>
+          <p>Vi är ett familjeägt byggföretag med lång erfarenhet av nybyggnation, renovering och tillbyggnad. Kvalitet och ärlighet i varje projekt.</p> 
+          <Link to="/offert" className="hero-cta">
+            Offertförfrågan &#8594;
           </Link>
         </div>
       </div>
