@@ -4,16 +4,13 @@
   margin-top: -50px;
   margin-left: -50vw;
   margin-bottom: 30px;
-  /* 
-    Break-out trick - the hero section takes full viewport width
-    See: https: //css-tricks.com/full-width-containers-limited-width-parents/
-  */
+
   width: 100vw;
   left: 50%;
 
   img {
     width: 100%;
-    aspect-ratio: 30/10;
+    aspect-ratio: 24/10;
     max-height: 600px;
     object-fit: cover;
 
