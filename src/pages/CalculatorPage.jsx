@@ -2,8 +2,7 @@ import { Construction, Hammer, Ruler, TreePine, House, BrickWall } from "lucide-
 
 
 CalculatorPage.route = {
-  path: '/offert',
-  index: 5
+  path: '/offert'
 }
 
 export default function CalculatorPage() {
@@ -15,8 +14,8 @@ export default function CalculatorPage() {
       { icon: <TreePine />, title: "Mark & trädgård", desc: "Altan, uppfart, mark" }
     ];
     return (
-      <div className="page">
-        <section>
+      <>
+        <section className="page">
           <h2 className="section-title">Vad behöver du hjälp med?</h2>
           <div className="offerts-grid">
             {offerts.map((s) => (
@@ -29,7 +28,7 @@ export default function CalculatorPage() {
           </div>
           <button className="btn">Nästa &#8594;</button>
         </section>
-      </div>
+      </>
     );
   }
 }
