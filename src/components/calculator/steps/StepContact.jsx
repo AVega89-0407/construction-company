@@ -4,10 +4,10 @@ import NavButtons from "../ui/NavButtons";
 import { CircleCheckBig } from "lucide-react";
 import { Link } from "react-router";
 
-const SERVICE_ID = "service_gvfphms";
-const COMPANY_TEMPLATE = "template_zsmj7ne";
-const CUSTOMER_TEMPLATE = "template_0kmf6vj";
-const PUBLIC_KEY = "EtpsRXJenv8J5g5yO";
+const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+const COMPANY_TEMPLATE = import.meta.env.VITE_EMAILJS_COMPANY_TEMPLATE;
+const CUSTOMER_TEMPLATE = import.meta.env.VITE_EMAILJS_CUSTOMER_TEMPLATE;
+const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
 export default function ContactStep({ answers, onBack }) {
   const [contact, setContact] = useState({
@@ -54,7 +54,7 @@ export default function ContactStep({ answers, onBack }) {
         {
           name: contact.name,
           email: contact.email,
-          
+
           tjanst: answers.tjanst,
 
         },
