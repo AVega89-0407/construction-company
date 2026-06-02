@@ -6,7 +6,7 @@ export default function OptionCard({ icon, label, description, selected, onClick
             {icon}
             <span className="option-card__label">{label}</span>
             {description && (
-                <span className="option-card__desc">{descrpition}</span>
+                <span className="option-card__desc">{description}</span>
             )}
         </button>
     )

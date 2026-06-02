@@ -1,6 +1,13 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import NavButtons from "../ui/NavButtons";
+import { CircleCheckBig } from "lucide-react";
+import { Link } from "react-router";
+
+const SERVICE_ID = "service_gvfphms";
+const COMPANY_TEMPLATE = "template_zsmj7ne";
+const CUSTOMER_TEMPLATE = "template_0kmf6vj";
+const PUBLIC_KEY = "EtpsRXJenv8J5g5yO";
 
 export default function ContactStep({ answers, onBack }) {
   const [contact, setContact] = useState({
@@ -9,6 +16,7 @@ export default function ContactStep({ answers, onBack }) {
     phone: "",
     message: "",
   });
+  const [status, setStatus] = useState(null);
 
   function handleChange(e) {
     setContact({
@@ -19,9 +27,11 @@ export default function ContactStep({ answers, onBack }) {
 
   async function handleSubmit() {
     try {
+
+      //Mail till företaget
       await emailjs.send(
-        "SERVICE_ID",
-        "TEMPLATE_ID",
+        SERVICE_ID,
+        COMPANY_TEMPLATE,
         {
           name: contact.name,
           email: contact.email,
@@ -34,15 +44,47 @@ export default function ContactStep({ answers, onBack }) {
           standard: answers.standard,
           timing: answers.timing,
         },
-        "PUBLIC_KEY"
+        PUBLIC_KEY
       );
 
-      alert("Tack! Din offertförfrågan har skickats.");
+      //Bekräftelse till kunden
+      await emailjs.send(
+        SERVICE_ID,
+        CUSTOMER_TEMPLATE,
+        {
+          name: contact.name,
+          email: contact.email,
+          
+          tjanst: answers.tjanst,
+
+        },
+        PUBLIC_KEY
+      );
+
+      setStatus("success");
+
     } catch (error) {
       console.error(error);
-      alert("Något gick fel.");
+      setStatus("error");
     }
   }
+
+  if (status === "success") {
+  return (
+    <section className="step">
+      <div className="success-card">
+        <CircleCheckBig size={64} color="#f59e0b" />
+        <h2>Tack för din förfrågan!</h2>
+        <p>
+          Vi har tagit emot dina uppgifter och återkommer så snart som möjligt.
+        </p>
+      </div>
+        <Link to="/" className="btn btn--primary">
+    Till startsidan
+  </Link>
+    </section>
+  );
+}
 
   return (
     <section className="step">

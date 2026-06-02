@@ -17,7 +17,6 @@ export default function Step2Timing({ answers, onChange, onNext, onBack }) {
           <OptionCard
             key={opt.value}
             label={opt.value}
-            description={opt.description}
             selected={answers.timing === opt.value}
             onClick={() => onChange("timing", opt.value)}
           />
