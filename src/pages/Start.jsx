@@ -1,5 +1,6 @@
 import Lorem from '../components/Lorem';
 import HeroImage from '../components/HeroImage';
+import CookieBanner from '../components/CookieBanner';
 
 import { Link } from 'react-router';
 
@@ -12,6 +13,7 @@ Start.route = {
 export default function Start() {
   return (
     <>
+    <CookieBanner privacyPolicyPath="/integritetspolicy" />
               <HeroImage
         src="construction-hero.jpg"
         alt="Start Hero"

@@ -1,6 +1,5 @@
 main {
   padding: 40px 20px;
-  /* rough approximation of header height — adjust if header changes */
   margin: 100px auto 0;
 
   h2:first-of-type {
